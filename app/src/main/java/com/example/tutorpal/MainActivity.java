@@ -14,9 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Button points = (Button) findViewById(R.id.pointsButton);
-        final Button tutor = (Button) findViewById(R.id.findTutorButton);
-        final Button students = (Button) findViewById(R.id.findStudentsButton);
+        final Button points = (Button) findViewById(R.id.redeemPoints);
+        final Button tutor = (Button) findViewById(R.id.findStudentButton);
+        final Button students = (Button) findViewById(R.id.findTutor);
 
         points.setOnClickListener(new View.OnClickListener() {
             @Override
