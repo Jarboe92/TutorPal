@@ -16,16 +16,16 @@ public class PointsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_points);
 
-        final Button apple = (Button) findViewById(R.id.apple);
-        final Button nike = (Button) findViewById(R.id.nike);
-        final Button adidas = (Button) findViewById(R.id.adidas);
-        final Button dell = (Button) findViewById(R.id.dell);
+        final Button blaze = (Button) findViewById(R.id.blaze);
+        final Button chipotle = (Button) findViewById(R.id.chipotle);
+        final Button tenrens = (Button) findViewById(R.id.tenrens);
+        final Button kft = (Button) findViewById(R.id.kft);
 
-        apple.setOnClickListener(new View.OnClickListener() {
+        blaze.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Context context = getApplicationContext();
-                CharSequence text = "Apple Code: apple_code";
+                CharSequence text = "Blaze Code: blaze_code";
                 int duration = Toast.LENGTH_SHORT;
 
                 Toast toast = Toast.makeText(context, text, duration);
@@ -33,11 +33,11 @@ public class PointsActivity extends AppCompatActivity {
             }
         });
 
-        nike.setOnClickListener(new View.OnClickListener() {
+        chipotle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Context context = getApplicationContext();
-                CharSequence text = "Nike Code: nike_code";
+                CharSequence text = "Chipotle Code: chipotle_code";
                 int duration = Toast.LENGTH_SHORT;
 
                 Toast toast = Toast.makeText(context, text, duration);
@@ -45,11 +45,11 @@ public class PointsActivity extends AppCompatActivity {
             }
         });
 
-        adidas.setOnClickListener(new View.OnClickListener() {
+        tenrens.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Context context = getApplicationContext();
-                CharSequence text = "Adidas Code: adidas_code";
+                CharSequence text = "Ten Rens Code: tenrens_code";
                 int duration = Toast.LENGTH_SHORT;
 
                 Toast toast = Toast.makeText(context, text, duration);
@@ -57,11 +57,11 @@ public class PointsActivity extends AppCompatActivity {
             }
         });
 
-        dell.setOnClickListener(new View.OnClickListener() {
+        kft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Context context = getApplicationContext();
-                CharSequence text = "Dell Code: dell_code";
+                CharSequence text = "Kung Fu Tea Code: kft_code";
                 int duration = Toast.LENGTH_SHORT;
 
                 Toast toast = Toast.makeText(context, text, duration);
