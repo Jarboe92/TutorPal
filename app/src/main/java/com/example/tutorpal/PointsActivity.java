@@ -21,6 +21,8 @@ public class PointsActivity extends AppCompatActivity {
         final Button tenrens = (Button) findViewById(R.id.tenrens);
         final Button kft = (Button) findViewById(R.id.kft);
 
+        final Button log_out = (Button) findViewById(R.id.log_out2);
+
         blaze.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,6 +68,14 @@ public class PointsActivity extends AppCompatActivity {
 
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
+            }
+        });
+
+        log_out.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), StartActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         final Button tutor = (Button) findViewById(R.id.findStudentButton);
         final Button students = (Button) findViewById(R.id.findTutor);
 
+        //final Button log_out = (Button) findViewById(R.id.log_out2);
+
         points.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,5 +43,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+//        log_out.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(), StartActivity.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 }
