@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         tutor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), FindTutorActivity.class);
+                Intent intent = new Intent(getApplicationContext(), FindStudentsActivity.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         students.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), FindStudentsActivity.class);
+                Intent intent = new Intent(getApplicationContext(), FindTutorActivity.class);
                 startActivity(intent);
             }
         });
