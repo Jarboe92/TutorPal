@@ -20,6 +20,8 @@ public class PointsActivity extends AppCompatActivity {
         final Button chipotle = (Button) findViewById(R.id.chipotle);
         final Button tenrens = (Button) findViewById(R.id.tenrens);
         final Button kft = (Button) findViewById(R.id.kft);
+        final Button target = (Button) findViewById(R.id.target);
+        final Button lidl = (Button) findViewById(R.id.lidl);
 
         final Button log_out = (Button) findViewById(R.id.log_out2);
 
@@ -64,6 +66,30 @@ public class PointsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Context context = getApplicationContext();
                 CharSequence text = "Kung Fu Tea Code: kft_code";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+        });
+
+        lidl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = getApplicationContext();
+                CharSequence text = "Lidl: lidl_code";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+        });
+
+        target.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = getApplicationContext();
+                CharSequence text = "Target: target_code";
                 int duration = Toast.LENGTH_SHORT;
 
                 Toast toast = Toast.makeText(context, text, duration);

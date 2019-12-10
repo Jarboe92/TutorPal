@@ -37,7 +37,6 @@ public class StartActivity extends AppCompatActivity {
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
-        final Button register = (Button) findViewById(R.id.RegisterButton);
         final Button logIn = (Button) findViewById(R.id.LogInButton);
 
         //log in button will take you to the points page for now, we will assume user already exists
