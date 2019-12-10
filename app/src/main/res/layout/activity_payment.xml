@@ -51,9 +51,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView2"
                 app:srcCompat="@drawable/payment_summary" />
 
+            <com.braintreepayments.cardform.view.SupportedCardTypesView
+                android:id="@+id/supported_card_types"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp" />
+
             <com.braintreepayments.cardform.view.CardForm
                 android:id="@+id/card_form"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <ImageView

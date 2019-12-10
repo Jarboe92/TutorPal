@@ -12,6 +12,7 @@
         <activity android:name=".FindStudentsActivity"></activity>
         <activity android:name=".FindTutorActivity" />
         <activity android:name=".PointsActivity" />
+        <activity android:name=".PaymentActivity" />
         <activity android:name=".MainActivity"/>
         <activity android:name=".StartActivity">
             <intent-filter>
