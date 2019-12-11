@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         points.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(getApplicationContext(), PointsActivity.class);
-                Intent intent = new Intent(getApplicationContext(), PaymentActivity.class);
+                Intent intent = new Intent(getApplicationContext(), PointsActivity.class);
+//                Intent intent = new Intent(getApplicationContext(), PaymentActivity.class);
                 startActivity(intent);
             }
         });
