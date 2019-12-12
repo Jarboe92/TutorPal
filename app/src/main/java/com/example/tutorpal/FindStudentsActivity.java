@@ -35,9 +35,18 @@ public class FindStudentsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_find_students);
 
 
-        Toast.makeText(this,"Select what times you are available!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Select what times you are available then save!", Toast.LENGTH_SHORT).show();
         ViewGroup viewGroup = findViewById(R.id.studentLayout);
         ArrayList<View> buttonArrayList = getViewsByTag(viewGroup, "scheduleButton");
+
+        Button save = findViewById(R.id.filler);
+
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         for (final View button : buttonArrayList) {
             button.setOnClickListener(new View.OnClickListener() {

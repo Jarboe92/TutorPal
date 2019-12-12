@@ -7,8 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".FindStudentsActivity">
 
-    <ImageView
+    <Button
         android:id="@+id/filler"
+        android:text="save"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:background="#388525"
         android:layout_width="60dp"
         android:layout_height="40dp"/>
 
