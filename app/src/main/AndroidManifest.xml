@@ -9,12 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FindStudentsActivity"></activity>
-        <activity android:name=".FindTutorActivity" />
+        <activity android:name=".JinaActivity"></activity>
+        <activity android:name=".SofiaActivity" />
+        <activity android:name=".RobertActivity" />
+        <activity android:name=".RaghavActivity" />
+        <activity android:name=".FindStudentsActivity" />
         <activity android:name=".PointsActivity" />
         <activity android:name=".PaymentActivity" />
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".StartActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".FindTutorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
