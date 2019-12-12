@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,8 +28,12 @@ public class PaymentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_payment);
 
         final Button pay = (Button) findViewById(R.id.pay);
+        final TextView costs = (TextView) findViewById(R.id.textView);
 
         final Button log_out = (Button) findViewById(R.id.log_out2);
+
+        costs.setText(String.format("Start Time: %s\nEnd Time: %s\n Hourly Cost: $8.50\n Total Hours: 2.00\n Grand Total: $17.00",
+                FindTutorActivity.start_time, FindTutorActivity.end_time));
 
 //        https://github.com/braintree/android-card-form/blob/master/README.md
         cardForm = (CardForm) findViewById(R.id.card_form);

@@ -23,6 +23,9 @@ import android.widget.Toast;
 
 public class FindTutorActivity extends AppCompatActivity {
 
+    public static String start_time;
+    public static String end_time;
+
     int [] images = {R.drawable.raghav, R.drawable.robert, R.drawable.sofia,
             R.drawable.jina, R.drawable.btrix, R.drawable.jerry};
 

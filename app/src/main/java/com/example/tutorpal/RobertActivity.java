@@ -56,11 +56,26 @@ public class RobertActivity extends AppCompatActivity implements AdapterView.OnI
                 R.layout.support_simple_spinner_dropdown_item, start);
         spinner1.setAdapter(one);
 
+        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+                FindTutorActivity.start_time = parent.getItemAtPosition(pos).toString();
+            }
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+
         Spinner spinner2 = findViewById(R.id.spinner2);
 
         ArrayAdapter<String> two = new ArrayAdapter<>(this,
                 R.layout.support_simple_spinner_dropdown_item, end);
         spinner2.setAdapter(two);
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+                FindTutorActivity.end_time = parent.getItemAtPosition(pos).toString();
+            }
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
     }
 
     @Override
