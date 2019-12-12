@@ -6,4 +6,7 @@
     <string name="findTutorText">Welcome to the Find Tutor Activity</string>
     <string name="findStudentText">Welcome to the Find Students Activity</string>
     <string name="pointsText">Welcome to the Redeem Points Activity</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_end_time">Select End Time</string>
+    <string name="select_start_time">Select Start Time</string>
 </resources>
