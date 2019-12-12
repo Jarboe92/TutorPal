@@ -6,17 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".PointsActivity">
 
-    <ImageView
-        android:id="@+id/pointsText3"
-        android:layout_width="101dp"
-        android:layout_height="72dp"
-        android:src="@drawable/points_txt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Points"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
         android:id="@+id/log_out2"
@@ -184,5 +182,17 @@
                 app:autoSizeTextType="none" />
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="Points:"
+        app:layout_constraintStart_toEndOf="@+id/user_face2"
+        app:layout_constraintTop_toTopOf="@+id/user_face2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
