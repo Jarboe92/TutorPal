@@ -1,19 +1,2291 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/studentLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FindStudentsActivity">
 
+    <ImageView
+        android:id="@+id/filler"
+        android:layout_width="60dp"
+        android:layout_height="40dp"/>
 
     <TextView
-        android:id="@+id/findStudent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/findStudentText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/PM6"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/PM5"
+        android:text="6PM"
+        android:textSize="15sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/AM10"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/AM9"
+        android:text="10AM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/NOON"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/AM11"
+        android:text="NOON"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/PM7"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/PM6"
+        android:text="7PM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/PM5"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/PM4"
+        android:text="5PM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/PM2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/PM1"
+        android:text="2PM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/AM11"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/AM10"
+        android:text="11AM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/PM1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/NOON"
+        android:text="1PM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/PM3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/PM2"
+        android:text="3PM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/PM9"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/PM8"
+        android:text="9PM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/PM8"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/PM7"
+        android:text="8PM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/PM4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/PM3"
+        android:text="4PM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/AM8"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/AM7"
+        android:text="8AM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/AM7"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/filler"
+        android:text="7AM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/AM9"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/AM8"
+        android:text="9AM"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="MON"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/filler"
+        android:layout_alignBottom="@id/filler"
+        android:textAlignment="center"
+        android:id="@+id/Monday"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="TUE"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/Monday"
+        android:layout_alignBottom="@id/filler"
+        android:id="@+id/Tuesday"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="WED"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/Tuesday"
+        android:layout_alignBottom="@id/filler"
+        android:id="@+id/Wednesday"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="THU"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/Wednesday"
+        android:layout_alignBottom="@id/filler"
+        android:id="@+id/Thursday"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="FRI"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/Thursday"
+        android:layout_alignBottom="@id/filler"
+        android:id="@+id/Friday"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="SAT"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/Friday"
+        android:layout_alignBottom="@id/filler"
+        android:id="@+id/Saturday"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="SUN"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/Saturday"
+        android:layout_alignBottom="@id/filler"
+        android:id="@+id/Sunday"/>
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7amTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/Monday"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7amBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amTopMonday"
+        android:layout_alignBottom="@id/AM7"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8amTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amBotMonday"
+        android:layout_alignTop="@+id/AM8"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8amBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amTopMonday"
+        android:layout_alignBottom="@id/AM8"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9amTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amBotMonday"
+        android:layout_alignTop="@+id/AM9"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9amBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amTopMonday"
+        android:layout_alignBottom="@id/AM9"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button10amTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amBotMonday"
+        android:layout_alignTop="@+id/AM10"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button10amBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amTopMonday"
+        android:layout_alignBottom="@id/AM10"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button11amTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amBotMonday"
+        android:layout_alignTop="@+id/AM11"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button11amBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amTopMonday"
+        android:layout_alignBottom="@id/AM11"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button12pmTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amBotMonday"
+        android:layout_alignTop="@+id/NOON"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button12pmBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmTopMonday"
+        android:layout_alignBottom="@id/NOON"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button1pmTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmBotMonday"
+        android:layout_alignTop="@+id/PM1"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button1pmBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmTopMonday"
+        android:layout_alignBottom="@id/PM1"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button2pmTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmBotMonday"
+        android:layout_alignTop="@+id/PM2"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button2pmBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button2pmTopMonday"
+        android:layout_alignBottom="@id/PM2"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button3pmTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/PM3"
+        android:layout_below="@id/button2pmBotMonday"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button3pmBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmTopMonday"
+        android:layout_alignBottom="@id/PM3"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button4pmTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmBotMonday"
+        android:layout_alignTop="@+id/PM4"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button4pmBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmTopMonday"
+        android:layout_alignBottom="@id/PM4"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button5pmTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmBotMonday"
+        android:layout_alignTop="@+id/PM5"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button5pmBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmTopMonday"
+        android:layout_alignBottom="@id/PM5"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button6pmTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmBotMonday"
+        android:layout_alignTop="@+id/PM6"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button6pmBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmTopMonday"
+        android:layout_alignBottom="@id/PM6"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7pmTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmBotMonday"
+        android:layout_alignTop="@+id/PM7"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7pmBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmTopMonday"
+        android:layout_alignBottom="@id/PM7"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8pmTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmBotMonday"
+        android:layout_alignTop="@+id/PM8"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8pmBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmTopMonday"
+        android:layout_alignBottom="@id/PM8"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9pmTopMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmBotMonday"
+        android:layout_alignTop="@+id/PM9"
+        android:layout_toRightOf="@id/filler"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9pmBotMonday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9pmTopMonday"
+        android:layout_toRightOf="@id/filler"
+        android:layout_alignBottom="@id/PM9"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7amTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/Tuesday"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7amBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amBotTuesday"
+        android:layout_alignBottom="@id/AM7"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8amTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amBotTuesday"
+        android:layout_alignTop="@+id/AM8"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8amBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amTopTuesday"
+        android:layout_alignBottom="@id/AM8"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9amTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amBotTuesday"
+        android:layout_alignTop="@+id/AM9"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9amBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amTopTuesday"
+        android:layout_alignBottom="@id/AM9"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button10amTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amBotTuesday"
+        android:layout_alignTop="@+id/AM10"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button10amBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amTopTuesday"
+        android:layout_alignBottom="@id/AM10"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button11amTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amBotTuesday"
+        android:layout_alignTop="@+id/AM11"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button11amBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amTopTuesday"
+        android:layout_alignBottom="@id/AM11"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button12pmTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amBotTuesday"
+        android:layout_alignTop="@+id/NOON"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button12pmBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmTopTuesday"
+        android:layout_alignBottom="@id/NOON"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button1pmTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmBotTuesday"
+        android:layout_alignTop="@+id/PM1"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button1pmBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmTopTuesday"
+        android:layout_alignBottom="@id/PM1"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button2pmTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmBotTuesday"
+        android:layout_alignTop="@+id/PM2"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button2pmBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button2pmTopTuesday"
+        android:layout_alignBottom="@id/PM2"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button3pmTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/PM3"
+        android:layout_below="@id/button2pmBotTuesday"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button3pmBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmTopTuesday"
+        android:layout_alignBottom="@id/PM3"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button4pmTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmBotTuesday"
+        android:layout_alignTop="@+id/PM4"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button4pmBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmTopTuesday"
+        android:layout_alignBottom="@id/PM4"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button5pmTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmBotTuesday"
+        android:layout_alignTop="@+id/PM5"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button5pmBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmTopTuesday"
+        android:layout_alignBottom="@id/PM5"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button6pmTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmBotTuesday"
+        android:layout_alignTop="@+id/PM6"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button6pmBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmTopTuesday"
+        android:layout_alignBottom="@id/PM6"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7pmTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmBotTuesday"
+        android:layout_alignTop="@+id/PM7"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7pmBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmTopTuesday"
+        android:layout_alignBottom="@id/PM7"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8pmTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmBotTuesday"
+        android:layout_alignTop="@+id/PM8"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8pmBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmTopTuesday"
+        android:layout_alignBottom="@id/PM8"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9pmTopTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmBotTuesday"
+        android:layout_alignTop="@+id/PM9"
+        android:layout_toRightOf="@id/Monday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9pmBotTuesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9pmTopTuesday"
+        android:layout_toRightOf="@id/Monday"
+        android:layout_alignBottom="@id/PM9"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7amTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/Wednesday"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7amBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amTopWednesday"
+        android:layout_alignBottom="@id/AM7"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8amTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amBotWednesday"
+        android:layout_alignTop="@+id/AM8"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8amBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amTopWednesday"
+        android:layout_alignBottom="@id/AM8"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9amTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amBotWednesday"
+        android:layout_alignTop="@+id/AM9"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9amBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amTopWednesday"
+        android:layout_alignBottom="@id/AM9"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button10amTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amBotWednesday"
+        android:layout_alignTop="@+id/AM10"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button10amBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amTopWednesday"
+        android:layout_alignBottom="@id/AM10"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button11amTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amBotWednesday"
+        android:layout_alignTop="@+id/AM11"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button11amBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amTopWednesday"
+        android:layout_alignBottom="@id/AM11"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button12pmTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amBotWednesday"
+        android:layout_alignTop="@+id/NOON"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button12pmBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmTopWednesday"
+        android:layout_alignBottom="@id/NOON"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button1pmTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmBotWednesday"
+        android:layout_alignTop="@+id/PM1"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button1pmBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmTopWednesday"
+        android:layout_alignBottom="@id/PM1"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button2pmTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmBotWednesday"
+        android:layout_alignTop="@+id/PM2"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button2pmBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button2pmTopWednesday"
+        android:layout_alignBottom="@id/PM2"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button3pmTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/PM3"
+        android:layout_below="@id/button2pmBotWednesday"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button3pmBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmTopWednesday"
+        android:layout_alignBottom="@id/PM3"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button4pmTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmBotWednesday"
+        android:layout_alignTop="@+id/PM4"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button4pmBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmTopWednesday"
+        android:layout_alignBottom="@id/PM4"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button5pmTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmBotWednesday"
+        android:layout_alignTop="@+id/PM5"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button5pmBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmTopWednesday"
+        android:layout_alignBottom="@id/PM5"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button6pmTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmBotWednesday"
+        android:layout_alignTop="@+id/PM6"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button6pmBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmTopWednesday"
+        android:layout_alignBottom="@id/PM6"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7pmTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmBotWednesday"
+        android:layout_alignTop="@+id/PM7"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7pmBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmTopWednesday"
+        android:layout_alignBottom="@id/PM7"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8pmTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmBotWednesday"
+        android:layout_alignTop="@+id/PM8"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8pmBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmTopWednesday"
+        android:layout_alignBottom="@id/PM8"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9pmTopWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmBotWednesday"
+        android:layout_alignTop="@+id/PM9"
+        android:layout_toRightOf="@id/Tuesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9pmBotWednesday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9pmTopWednesday"
+        android:layout_toRightOf="@id/Tuesday"
+        android:layout_alignBottom="@id/PM9"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7amTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/Thursday"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7amBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amTopThursday"
+        android:layout_alignBottom="@id/AM7"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8amTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amTopThursday"
+        android:layout_alignTop="@+id/AM8"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8amBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amTopThursday"
+        android:layout_alignBottom="@id/AM8"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9amTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amBotThursday"
+        android:layout_alignTop="@+id/AM9"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9amBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amTopThursday"
+        android:layout_alignBottom="@id/AM9"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button10amTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amBotThursday"
+        android:layout_alignTop="@+id/AM10"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button10amBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amTopThursday"
+        android:layout_alignBottom="@id/AM10"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button11amTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amBotThursday"
+        android:layout_alignTop="@+id/AM11"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button11amBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amTopThursday"
+        android:layout_alignBottom="@id/AM11"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button12pmTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amBotThursday"
+        android:layout_alignTop="@+id/NOON"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button12pmBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmTopThursday"
+        android:layout_alignBottom="@id/NOON"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button1pmTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmBotThursday"
+        android:layout_alignTop="@+id/PM1"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button1pmBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmTopThursday"
+        android:layout_alignBottom="@id/PM1"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button2pmTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmBotThursday"
+        android:layout_alignTop="@+id/PM2"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button2pmBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button2pmTopThursday"
+        android:layout_alignBottom="@id/PM2"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button3pmTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/PM3"
+        android:layout_below="@id/button2pmBotThursday"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button3pmBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmTopThursday"
+        android:layout_alignBottom="@id/PM3"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button4pmTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmBotThursday"
+        android:layout_alignTop="@+id/PM4"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button4pmBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmTopThursday"
+        android:layout_alignBottom="@id/PM4"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button5pmTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmBotThursday"
+        android:layout_alignTop="@+id/PM5"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button5pmBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmTopThursday"
+        android:layout_alignBottom="@id/PM5"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button6pmTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmBotThursday"
+        android:layout_alignTop="@+id/PM6"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button6pmBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmTopThursday"
+        android:layout_alignBottom="@id/PM6"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7pmTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmBotThursday"
+        android:layout_alignTop="@+id/PM7"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7pmBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmTopThursday"
+        android:layout_alignBottom="@id/PM7"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8pmTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmBotThursday"
+        android:layout_alignTop="@+id/PM8"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8pmBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmTopThursday"
+        android:layout_alignBottom="@id/PM8"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9pmTopThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmBotThursday"
+        android:layout_alignTop="@+id/PM9"
+        android:layout_toRightOf="@id/Wednesday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9pmBotThursday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9pmTopThursday"
+        android:layout_toRightOf="@id/Wednesday"
+        android:layout_alignBottom="@id/PM9"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7amTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/Friday"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7amBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amTopFriday"
+        android:layout_alignBottom="@id/AM7"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8amTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amBotFriday"
+        android:layout_alignTop="@+id/AM8"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8amBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amTopFriday"
+        android:layout_alignBottom="@id/AM8"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9amTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amBotFriday"
+        android:layout_alignTop="@+id/AM9"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9amBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amTopFriday"
+        android:layout_alignBottom="@id/AM9"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button10amTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amBotFriday"
+        android:layout_alignTop="@+id/AM10"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button10amBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amTopFriday"
+        android:layout_alignBottom="@id/AM10"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button11amTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amBotFriday"
+        android:layout_alignTop="@+id/AM11"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button11amBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amTopFriday"
+        android:layout_alignBottom="@id/AM11"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button12pmTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amBotFriday"
+        android:layout_alignTop="@+id/NOON"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button12pmBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmTopFriday"
+        android:layout_alignBottom="@id/NOON"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button1pmTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmBotFriday"
+        android:layout_alignTop="@+id/PM1"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button1pmBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmTopFriday"
+        android:layout_alignBottom="@id/PM1"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button2pmTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmBotFriday"
+        android:layout_alignTop="@+id/PM2"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button2pmBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button2pmTopFriday"
+        android:layout_alignBottom="@id/PM2"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button3pmTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/PM3"
+        android:layout_below="@id/button2pmBotFriday"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button3pmBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmTopFriday"
+        android:layout_alignBottom="@id/PM3"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button4pmTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmBotFriday"
+        android:layout_alignTop="@+id/PM4"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button4pmBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmTopFriday"
+        android:layout_alignBottom="@id/PM4"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button5pmTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmBotFriday"
+        android:layout_alignTop="@+id/PM5"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button5pmBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmTopFriday"
+        android:layout_alignBottom="@id/PM5"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button6pmTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmBotFriday"
+        android:layout_alignTop="@+id/PM6"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button6pmBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmTopFriday"
+        android:layout_alignBottom="@id/PM6"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7pmTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmBotFriday"
+        android:layout_alignTop="@+id/PM7"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7pmBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmTopFriday"
+        android:layout_alignBottom="@id/PM7"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8pmTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmBotFriday"
+        android:layout_alignTop="@+id/PM8"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8pmBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmTopFriday"
+        android:layout_alignBottom="@id/PM8"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9pmTopFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmBotFriday"
+        android:layout_alignTop="@+id/PM9"
+        android:layout_toRightOf="@id/Thursday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9pmBotFriday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9pmTopFriday"
+        android:layout_toRightOf="@id/Thursday"
+        android:layout_alignBottom="@id/PM9"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7amTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/Saturday"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button7amBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amTopSaturday"
+        android:layout_alignBottom="@id/AM7"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8amTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amBotSaturday"
+        android:layout_alignTop="@+id/AM8"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button8amBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amTopSaturday"
+        android:layout_alignBottom="@id/AM8"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9amTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amBotSaturday"
+        android:layout_alignTop="@+id/AM9"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button9amBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amTopSaturday"
+        android:layout_alignBottom="@id/AM9"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button10amTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amBotSaturday"
+        android:layout_alignTop="@+id/AM10"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button10amBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amTopSaturday"
+        android:layout_alignBottom="@id/AM10"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button11amTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amBotSaturday"
+        android:layout_alignTop="@+id/AM11"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button11amBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amTopSaturday"
+        android:layout_alignBottom="@id/AM11"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button12pmTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amBotSaturday"
+        android:layout_alignTop="@+id/NOON"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button12pmBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmTopSaturday"
+        android:layout_alignBottom="@id/NOON"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button1pmTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmBotSaturday"
+        android:layout_alignTop="@+id/PM1"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button1pmBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmTopSaturday"
+        android:layout_alignBottom="@id/PM1"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button2pmTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmBotSaturday"
+        android:layout_alignTop="@+id/PM2"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button2pmBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button2pmTopSaturday"
+        android:layout_alignBottom="@id/PM2"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button3pmTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/PM3"
+        android:layout_below="@id/button2pmBotSaturday"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button3pmBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmTopSaturday"
+        android:layout_alignBottom="@id/PM3"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button4pmTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmBotSaturday"
+        android:layout_alignTop="@+id/PM4"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button4pmBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmTopSaturday"
+        android:layout_alignBottom="@id/PM4"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button5pmTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmBotSaturday"
+        android:layout_alignTop="@+id/PM5"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button5pmBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmTopSaturday"
+        android:layout_alignBottom="@id/PM5"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button6pmTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmBotSaturday"
+        android:layout_alignTop="@+id/PM6"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+android:tag="scheduleButton"
+        android:id="@+id/button6pmBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmTopSaturday"
+        android:layout_alignBottom="@id/PM6"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button7pmTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmBotSaturday"
+        android:layout_alignTop="@+id/PM7"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button7pmBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmTopSaturday"
+        android:layout_alignBottom="@id/PM7"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button8pmTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmBotSaturday"
+        android:layout_alignTop="@+id/PM8"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button8pmBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmTopSaturday"
+        android:layout_alignBottom="@id/PM8"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button9pmTopSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmBotSaturday"
+        android:layout_alignTop="@+id/PM9"
+        android:layout_toRightOf="@id/Friday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button9pmBotSaturday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9pmTopSaturday"
+        android:layout_toRightOf="@id/Friday"
+        android:layout_alignBottom="@id/PM9"
+        android:background="#A9A9B0" />
+
+    <Button
+    android:tag="scheduleButton"
+    android:id="@+id/button7amTopSunday"
+    android:layout_width="50dp"
+    android:layout_height="20dp"
+    android:layout_below="@id/Sunday"
+    android:layout_toRightOf="@id/Saturday"
+    android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button7amBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amTopSunday"
+        android:layout_alignBottom="@id/AM7"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button8amTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7amBotSunday"
+        android:layout_alignTop="@+id/AM8"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button8amBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amTopSunday"
+        android:layout_alignBottom="@id/AM8"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button9amTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8amBotSunday"
+        android:layout_alignTop="@+id/AM9"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button9amBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amTopSunday"
+        android:layout_alignBottom="@id/AM9"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button10amTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9amBotSunday"
+        android:layout_alignTop="@+id/AM10"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button10amBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amTopSunday"
+        android:layout_alignBottom="@id/AM10"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button11amTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button10amBotSunday"
+        android:layout_alignTop="@+id/AM11"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button11amBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amTopSunday"
+        android:layout_alignBottom="@id/AM11"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button12pmTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button11amBotSunday"
+        android:layout_alignTop="@+id/NOON"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button12pmBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmTopSunday"
+        android:layout_alignBottom="@id/NOON"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button1pmTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button12pmBotSunday"
+        android:layout_alignTop="@+id/PM1"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button1pmBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmTopSunday"
+        android:layout_alignBottom="@id/PM1"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button2pmTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button1pmBotSunday"
+        android:layout_alignTop="@+id/PM2"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button2pmBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button2pmTopSunday"
+        android:layout_alignBottom="@id/PM2"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button3pmTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/PM3"
+        android:layout_below="@id/button2pmBotSunday"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button3pmBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmTopSunday"
+        android:layout_alignBottom="@id/PM3"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button4pmTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button3pmBotSunday"
+        android:layout_alignTop="@+id/PM4"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button4pmBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmTopSunday"
+        android:layout_alignBottom="@id/PM4"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button5pmTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button4pmBotSunday"
+        android:layout_alignTop="@+id/PM5"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button5pmBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmTopSunday"
+        android:layout_alignBottom="@id/PM5"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button6pmTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button5pmBotSunday"
+        android:layout_alignTop="@+id/PM6"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button6pmBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmTopSunday"
+        android:layout_alignBottom="@id/PM6"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button7pmTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button6pmBotSunday"
+        android:layout_alignTop="@+id/PM7"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button7pmBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmTopSunday"
+        android:layout_alignBottom="@id/PM7"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button8pmTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button7pmBotSunday"
+        android:layout_alignTop="@+id/PM8"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button8pmBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmTopSunday"
+        android:layout_alignBottom="@id/PM8"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button9pmTopSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button8pmBotSunday"
+        android:layout_alignTop="@+id/PM9"
+        android:layout_toRightOf="@id/Saturday"
+        android:background="#A9A9B0" />
+
+    <Button 
+        android:tag="scheduleButton"
+        android:id="@+id/button9pmBotSunday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/button9pmTopSunday"
+        android:layout_toRightOf="@id/Saturday"
+        android:layout_alignBottom="@id/PM9"
+        android:background="#A9A9B0" />
+</RelativeLayout>

@@ -1,53 +1,102 @@
 package com.example.tutorpal;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.DatePickerDialog;
+import android.content.Context;
+import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.DatePicker;
-import android.widget.EditText;
-
-import java.util.Calendar;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class FindTutorActivity extends AppCompatActivity {
 
-    private static final String TAG = "FindStudentActivity";
-    EditText date;
-    DatePickerDialog datePickerDialog;
+    int [] images = {R.drawable.raghav, R.drawable.robert, R.drawable.sofia,
+            R.drawable.jina, R.drawable.btrix, R.drawable.jerry};
 
+    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_tutor);
 
-        date = (EditText) findViewById(R.id.dateTutor);
-        //DatePicker temp = datePickerDialog.getDatePicker();
-        //temp.setSpinnersShown(true);
+        listView = findViewById(R.id.listview);
 
-        date.setOnClickListener(new View.OnClickListener() {
+        MyAdapter customAdapter = new MyAdapter();
+        listView.setAdapter(customAdapter);
+
+        //handle item clicks
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View v) {
-                // calender class's instance and get current date , month and year from calender
-                final Calendar c = Calendar.getInstance();
-                int mYear = c.get(Calendar.YEAR); // current year
-                int mMonth = c.get(Calendar.MONTH); // current month
-                int mDay = c.get(Calendar.DAY_OF_MONTH); // current day
-                // date picker dialog
-                datePickerDialog = new DatePickerDialog(FindTutorActivity.this,
-                        new DatePickerDialog.OnDateSetListener() {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                            @Override
-                            public void onDateSet(DatePicker view, int year,
-                                                  int monthOfYear, int dayOfMonth) {
-                                // set day of month , month and year value in the edit text
-                                date.setText((monthOfYear + 1) + "/"
-                                        + (dayOfMonth) + "/" + year);
+                //Raghav
+                if(position == 0) {
+                    Intent intent = new Intent();
+                    intent.setClass(FindTutorActivity.this, RaghavActivity.class);
+                    startActivity(intent);
+                }
 
-                            }
-                        }, mYear, mMonth, mDay);
-                datePickerDialog.show();
+                if(position == 1){
+                    Intent intent = new Intent();
+                    intent.setClass(FindTutorActivity.this, RobertActivity.class);
+                    startActivity(intent);
+                }
+
+                if(position == 2){
+                    Intent intent = new Intent();
+                    intent.setClass(FindTutorActivity.this, SofiaActivity.class);
+                    startActivity(intent);
+                }
+
+                if(position == 3){
+                    Intent intent = new Intent();
+                    intent.setClass(FindTutorActivity.this, JinaActivity.class);
+                    startActivity(intent);
+                }
             }
         });
+    }
+
+
+
+
+    class MyAdapter extends BaseAdapter {
+
+        @Override
+        public int getCount() {
+            return images.length;
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return 0;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            View view = getLayoutInflater().inflate(R.layout.tutor_layout, null);
+            ImageView imageView = view.findViewById(R.id.avatar);
+            imageView.setImageResource(images[position]);
+
+            return view;
+        }
     }
 }
